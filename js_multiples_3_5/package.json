@@ -1,0 +1,11 @@
+{
+  "name": "js_multiples_3_5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "multiples.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
