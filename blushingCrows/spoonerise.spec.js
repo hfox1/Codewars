@@ -13,7 +13,7 @@ describe('spoonerise', () => {
 		});
 	});
 
-	xdescribe('three words cases', () => {
+	describe('three words cases', () => {
 		it('take a shower', () => {
 			expect(spoonerise('take a shower')).toEqual('shake a tower');
 		});
@@ -27,7 +27,7 @@ describe('spoonerise', () => {
 		});
 	});
 
-	xdescribe('no spoon cases', () => {
+	describe('no spoon cases', () => {
 		it('single word case', () => {
 			expect(spoonerise('spoon')).toEqual('No spoons here');
 		});

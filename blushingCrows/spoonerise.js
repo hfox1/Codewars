@@ -4,23 +4,31 @@ const spoonerise = (string) => {
 	// join elements 1 & 3 and 2 & 4
 	// or else
 	//
+
 	let words = string.split(' ');
+
+	if (words.length === 1 || words.length > 3) {
+		return 'No spoons here';
+	}
+
 	let firstWord = words[0];
-	let secondWord = words[1];
+	let secondWord = words[words.length - 1];
 	console.log('wordsArray:', firstWord, ',', secondWord);
 
 	let firstWordVowelPosition = firstWord.search(/[aeiouAEIOU]/);
 	let secondWordVowelPosition = secondWord.search(/[aeiouAEIOU]/);
 
-	spoonElements = [];
+	let middle = ' ';
+	if (words.length === 3) {
+		middle = ' ' + words[1] + ' ';
+	}
 
-	spoonElements[2] = ' ';
-	spoonElements[3] = firstWord.slice(0, firstWordVowelPosition);
-	spoonElements[1] = firstWord.slice(firstWordVowelPosition);
-	spoonElements[0] = secondWord.slice(0, secondWordVowelPosition);
-	spoonElements[4] = secondWord.slice(secondWordVowelPosition);
+	let f = firstWord.slice(0, firstWordVowelPosition);
+	let oo = firstWord.slice(firstWordVowelPosition);
+	let b = secondWord.slice(0, secondWordVowelPosition);
+	let ar = secondWord.slice(secondWordVowelPosition);
 
-	return spoonElements.join('');
+	return b + oo + middle + f + ar;
 };
 
 module.exports = spoonerise;
