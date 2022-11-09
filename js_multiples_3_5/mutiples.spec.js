@@ -21,7 +21,9 @@ describe('multiples', () => {
 		expect(solution(10)).toEqual(23);
 	});
 
-	xit('adds multiples correctly for X = 20', () => {});
+	it('adds multiples correctly for X = 20', () => {
+		expect(solution(20)).toEqual(78);
+	});
 
 	xit('adds multiples correctly for X = 31', () => {});
 

@@ -8,7 +8,8 @@ const solution = (number) => {
 			array.push(i);
 		}
 	}
-	return array.reduce((a, b) => a + b, 0);
+	let unique = [...new Set(array)];
+	return unique.reduce((a, b) => a + b, 0);
 };
 
 module.exports = solution;
