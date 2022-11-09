@@ -1,0 +1,11 @@
+{
+  "name": "blushingcrows",
+  "version": "1.0.0",
+  "description": "",
+  "main": "spoonerise.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
