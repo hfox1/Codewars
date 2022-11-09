@@ -25,7 +25,7 @@ describe('multiples', () => {
 		expect(solution(20)).toEqual(78);
 	});
 
-	xit('adds multiples correctly for X = 31', () => {});
-
-	xit('returns 0 for X = 0', () => {});
+	it('returns 0 for X = -1', () => {
+		expect(solution(-1)).toEqual(0);
+	});
 });
