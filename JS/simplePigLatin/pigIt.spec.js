@@ -1,7 +1,7 @@
 const pigIt = require('./pigIt');
 
 describe('pigIt', () => {
-	it('does one word ', () => {
+	it('does single word ', () => {
 		expect(pigIt('Pig')).toEqual('igPay');
 	});
 
