@@ -14,7 +14,13 @@ describe('pigIt', () => {
 		expect(pigIt('This is my string')).toEqual('hisTay siay ymay tringsay');
 	});
 
-	xit('leaves punctuation untouched', () => {
+	it('leaves words ending in ay', () => {
+		expect(pigIt('Oay emporatay oay oresmay !ay')).toEqual(
+			'Oay emporatay oay oresmay !ay'
+		);
+	});
+
+	it('leaves words ending in ay, but removes ay from puncuation', () => {
 		expect(pigIt('Oay emporatay oay oresmay !ay')).toEqual(
 			'Oay emporatay oay oresmay !'
 		);
