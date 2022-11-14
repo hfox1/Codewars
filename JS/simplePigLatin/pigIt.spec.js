@@ -9,7 +9,7 @@ describe('pigIt', () => {
 		expect(pigIt('Pig!!')).toEqual('igPay!!');
 	});
 
-	xit('does a sentence', () => {
+	it('does a sentence', () => {
 		expect(pigIt('Pig latin is cool')).toEqual('igPay atinlay siay oolcay');
 		expect(pigIt('This is my string')).toEqual('hisTay siay ymay tringsay');
 	});

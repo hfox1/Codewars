@@ -13,7 +13,7 @@ const pigIt = (string) => {
 		let punctuation;
 		let unpunctuated;
 		if (index === -1) {
-			console.log('inside index = -1');
+			// console.log('inside index = -1');
 			punctuation = '';
 			unpunctuated = word;
 		} else {
