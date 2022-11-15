@@ -15,8 +15,8 @@ describe('pigIt', () => {
 	});
 
 	it('leaves words ending in ay', () => {
-		expect(pigIt('Oay emporatay oay oresmay !ay')).toEqual(
-			'Oay emporatay oay oresmay !ay'
+		expect(pigIt('Oay emporatay oay oresmay')).toEqual(
+			'Oay emporatay oay oresmay'
 		);
 	});
 
