@@ -2,7 +2,7 @@ const pigIt = (string) => {
 	let words = string.split(' ');
 	console.log(words);
 	let pigArray = words.map((word) => {
-		if (word.match(/ay\b/) !== null) {
+		if (word.match(/ay$/) !== null) {
 			// if word ends -ay
 			if (word.match(/^[^A-Za-z0-9 ]/) !== null) {
 				// then if it starts with punctuation
@@ -11,7 +11,6 @@ const pigIt = (string) => {
 				return word; // but if it doesnt start with punctuation, return the word (dont pig it)
 			}
 		} else if (word.match(/^ay[^A-Za-z0-9 ]$/) !== null) {
-			console.log(word.match(/^ay[^A-Za-z0-9 ]$/));
 			return word.replace('ay', '');
 		} else {
 			//if the word doesnt end -ay, and therefore is pigable, then pig it:
