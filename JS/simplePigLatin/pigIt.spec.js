@@ -31,4 +31,15 @@ describe('pigIt', () => {
 			'Oay emporatay oay oresmay !'
 		);
 	});
+
+	it('O tempora o mores !', () => {
+		expect(pigIt('O tempora o mores !')).toEqual('Oay emporatay oay oresmay !');
+	});
+
+	('O tempora o mores !');
 });
+// 'Oay emporatay oay oresmay ay!'
+// 'Oay emporatay oay oresmay ay!'
+// to equal
+// 'Oay emporatay oay oresmay !'
+// 'Oay emporatay oay oresmay !'
