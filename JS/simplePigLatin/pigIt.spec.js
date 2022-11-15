@@ -25,4 +25,10 @@ describe('pigIt', () => {
 			'Oay emporatay oay oresmay !'
 		);
 	});
+
+	it('removes ay from LHS of puncuation', () => {
+		expect(pigIt('Oay emporatay oay oresmay ay!')).toEqual(
+			'Oay emporatay oay oresmay !'
+		);
+	});
 });
