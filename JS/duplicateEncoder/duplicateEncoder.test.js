@@ -5,9 +5,10 @@ describe('duplicateEncoder', () => {
 		expect(duplicateEncoder('din')).toEqual('(((');
 	});
 
-	it('encodes ', () => {});
+	it('encodes recede', () => {
+		expect(duplicateEncoder('recede')).toEqual('()()()');
+	});
 });
 
-// "recede" => "()()()"
 // "Success" => ")())())"
 // "(( @" => "))(("
