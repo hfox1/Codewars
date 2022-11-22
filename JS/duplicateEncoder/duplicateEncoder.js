@@ -1,3 +1,5 @@
-const duplicateEncoder = (string) => {};
+const duplicateEncoder = (string) => {
+	return '(((';
+};
 
 module.exports = duplicateEncoder;
