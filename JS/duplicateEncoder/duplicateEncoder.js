@@ -1,6 +1,5 @@
 const duplicateEncoder = (s) => {
-	let string = s;
-	// .toLowerCase();
+	let string = s.toLowerCase();
 	let chars = string.split('');
 	// console.log(chars);
 	let letters = [];
