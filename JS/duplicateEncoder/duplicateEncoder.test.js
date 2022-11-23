@@ -8,6 +8,14 @@ describe('duplicateEncoder', () => {
 	it('encodes recede', () => {
 		expect(duplicateEncoder('recede')).toEqual('()()()');
 	});
+
+	it('encodes Success', () => {
+		expect(duplicateEncoder('Success')).toEqual(')())())');
+	});
+
+	// it('encodes recede', () => {
+	// 	expect(duplicateEncoder('recede')).toEqual('()()()');
+	// });
 });
 
 // "Success" => ")())())"
