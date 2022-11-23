@@ -13,10 +13,9 @@ describe('duplicateEncoder', () => {
 		expect(duplicateEncoder('Success')).toEqual(')())())');
 	});
 
-	// it('encodes recede', () => {
-	// 	expect(duplicateEncoder('recede')).toEqual('()()()');
-	// });
+	it('encodes (( @', () => {
+		expect(duplicateEncoder('(( @')).toEqual('))((');
+	});
 });
 
-// "Success" => ")())())"
 // "(( @" => "))(("
