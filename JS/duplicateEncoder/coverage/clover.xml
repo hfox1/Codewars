@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1669131774914" clover="3.2.0">
-  <project timestamp="1669131774914" name="All files">
-    <metrics statements="5" coveredstatements="5" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1" elements="7" coveredelements="7" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
+<coverage generated="1669203944242" clover="3.2.0">
+  <project timestamp="1669203944242" name="All files">
+    <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="22" coveredelements="22" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1"/>
     <file name="duplicateEncoder.js" path="/Users/harryfox/Projects/Codewars/JS/duplicateEncoder/duplicateEncoder.js">
-      <metrics statements="5" coveredstatements="5" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
       <line num="2" count="2" type="stmt"/>
       <line num="3" count="2" type="stmt"/>
-      <line num="4" count="1" type="stmt"/>
-      <line num="5" count="1" type="stmt"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="6" count="2" type="cond" truecount="1" falsecount="0"/>
+      <line num="7" count="9" type="stmt"/>
+      <line num="8" count="9" type="stmt"/>
+      <line num="9" count="9" type="stmt"/>
+      <line num="10" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="11" count="6" type="stmt"/>
+      <line num="12" count="9" type="stmt"/>
+      <line num="13" count="9" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
