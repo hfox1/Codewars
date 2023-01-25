@@ -6,9 +6,15 @@ const zipWith = (fn, a0, a1) => {
 	//
 	const args = [];
 	const returnArray = [];
-	args.push(a0[0]);
-	args.push(a1[0]);
-	returnArray.push(fn(a0[0], a1[0]));
+	let shorterLength;
+	a0.length > a1.length
+		? (shorterLength = a1.length)
+		: (shorterLength = a0.length);
+	for (var i = 0; i < shorterLength; i++) {
+		args.push(a0[i]);
+		args.push(a1[i]);
+		returnArray.push(fn(a0[i], a1[i]));
+	}
 
 	return returnArray;
 };
