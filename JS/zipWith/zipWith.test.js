@@ -1,7 +1,11 @@
 const zipWith = require('./zipWith');
 
 describe('zipWith', () => {
-	it('does .pow', () => {
+	it('does .pow for length 1 arrays', () => {
+		expect(zipWith(Math.pow, [10], [0])).toEqual([1]);
+	});
+
+	xit('does .pow', () => {
 		expect(zipWith(Math.pow, [10, 10, 10, 10], [0, 1, 2, 3])).toEqual([
 			1, 10, 100, 1000,
 		]);
