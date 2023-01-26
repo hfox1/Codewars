@@ -6,7 +6,7 @@ describe('matrixTranspose', () => {
 			expect(matrixTranspose([[1]])).toStrictEqual([[1]]);
 		});
 	});
-	it('', () => {
+	it('2x3 matrix', () => {
 		expect(
 			matrixTranspose([
 				[1, 2, 3],
