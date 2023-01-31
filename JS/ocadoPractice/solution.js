@@ -1,14 +1,29 @@
 const solution = (A) => {
+	const velocitiesEqual = (location, separation) => {
+		return (
+			A[location + 1] - A[location] ==
+			A[location + 2 + separation] - A[location + 1 + separation]
+		);
+	};
+
 	let answer = [];
 
-	for (k = 0; k < A.length; k++) {
-		if (A[k + 1] - A[k] == A[k + 2] - A[k + 1]) answer.push([k, k + 1, k + 2]);
+	for (location = 0; location < A.length - 2; location++) {
+		for (separation = 0; separation < A.length - location; separation++) {
+			if (velocitiesEqual(location, separation)) {
+				let subAnswer = [location, location + 1];
+				for (l = 0; l <= separation; l++) {
+					// console.log('velocitiesEqual', velocitiesEqual());
+					if (velocitiesEqual(location + l, 0)) {
+						subAnswer.push(location + l + 2);
+						// console.log(location, separation, subAnswer);
+						answer.push(subAnswer);
+					}
+				}
+			}
+		}
 	}
-	for (k = 0; k < A.length; k++) {
-		if (A[k + 1] - A[k] == A[k + 3] - A[k + 2])
-			answer.push([k, k + 1, k + 2, k + 3]);
-	}
-	console.log(answer);
+
 	return answer;
 };
 
