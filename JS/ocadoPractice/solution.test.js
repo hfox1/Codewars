@@ -8,8 +8,8 @@ describe('solution', () => {
 	it('gets a single period', () => {
 		expect(solution([1, 3, 5])).toEqual([0, 1, 2]);
 	});
-	it('gets a single period', () => {
-		expect(solution([3, 5, 7])).toEqual([1, 2, 3]);
+	it('gets a second single period', () => {
+		expect(solution([0, 3, 5, 7])).toEqual([1, 2, 3]);
 	});
 
 	xit('gets a single period', () => {});
