@@ -1,7 +1,10 @@
 const solution = (A) => {
-	if (A[1] - A[0] == A[2] - A[1]) return [0, 1, 2];
-	if (A[2] - A[1] == A[3] - A[2]) return [1, 2, 3];
-	else return [];
+	let answer = [];
+	for (k = 0; k < A.length; k++) {
+		if (A[k + 1] - A[k] == A[k + 2] - A[k + 1]) answer.push([k, k + 1, k + 2]);
+	}
+	console.log(answer);
+	return answer;
 };
 
 module.exports = solution;
