@@ -12,5 +12,10 @@ describe('solution', () => {
 		expect(solution([0, 3, 5, 7])).toEqual([1, 2, 3]);
 	});
 
-	xit('gets a single period', () => {});
+	it('gets a 4-k period', () => {
+		expect(solution([1, 3, 5, 7])).toEqual([
+			[0, 1, 2],
+			[1, 2, 3],
+		]);
+	});
 });
