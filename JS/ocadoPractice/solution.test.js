@@ -11,17 +11,18 @@ describe('solution', () => {
 	it('gets a second minimal period', () => {
 		expect(solution([0, 3, 5, 7])).toEqual([[1, 2, 3]]);
 	});
-	it('gets 2 minimal periods', () => {
-		expect(solution([1, 3, 5, 7])).toEqual([
-			[0, 1, 2],
-			[1, 2, 3],
-		]);
-	});
+	// it.only('gets 2 minimal periods', () => {
+	// 	expect(solution([1, 3, 5, 7])).toEqual([
+	// 		[0, 1, 2],
+	// 		[1, 2, 3],
+	// 	]);
+	// });
 
-	xit('gets a 4-k period', () => {
-		expect(solution([1, 3, 5, 7])).toEqual([
+	it('gets a 4-k period', () => {
+		expect(solution([1, 3, 5, 7])).toStrictEqual([
 			[0, 1, 2],
 			[1, 2, 3],
+			[0, 1, 2, 3],
 		]);
 	});
 });
