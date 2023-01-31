@@ -5,7 +5,7 @@ describe('solution', () => {
 		expect(solution([1, 2, 5])).toEqual([]);
 	});
 
-	xit('gets a single period', () => {
+	it('gets a single period', () => {
 		expect(solution([1, 3, 5])).toEqual([0, 1, 2]);
 	});
 
