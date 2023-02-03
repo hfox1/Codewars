@@ -12,48 +12,64 @@ describe('solution', () => {
 		expect(solution([0, 3, 5, 7])).toEqual([[1, 2, 3]]);
 	});
 
+	it('trips on 1-length gaps', () => {
+		testT = [0, 1, 3, 4, 6, 7, 9, 10];
+		expect(solution(testT).length).toEqual(0);
+	});
+
 	it('gets a 4-k period', () => {
-		console.log('output', solution([1, 3, 5, 7]));
-		expect(solution([1, 3, 5, 7])).toStrictEqual([
+		// console.log(solution([1, 3, 5, 7]));
+		expect(solution([1, 3, 5, 7])).toEqual([
 			[0, 1, 2],
-			[1, 2, 3],
 			[0, 1, 2, 3],
+			[1, 2, 3],
 		]);
 	});
 
 	it('gets a 7-k period', () => {
 		test7 = [1, 3, 5, 7, 9, 11, 13];
-		expect(solution(test7)[14]).toStrictEqual([0, 1, 2, 3, 4, 5, 6]);
+		console.log('7-k output', solution(test7));
+		expect(solution(test7)).toEqual([
+			[0, 1, 2],
+			[0, 1, 2, 3],
+			[0, 1, 2, 3, 4],
+			[0, 1, 2, 3, 4, 5],
+			[0, 1, 2, 3, 4, 5, 6],
+			[1, 2, 3],
+			[1, 2, 3, 4],
+			[1, 2, 3, 4, 5],
+			[1, 2, 3, 4, 5, 6],
+			[2, 3, 4],
+			[2, 3, 4, 5],
+			[2, 3, 4, 5, 6],
+			[3, 4, 5],
+			[3, 4, 5, 6],
+			[4, 5, 6],
+		]);
 	});
 
-	it('trips on 1-length gaps', () => {
-		testT = [0, 1, 3, 4, 6, 7, 9, 10];
-		// console.log(solution(testT));
-		expect(solution(testT).length).toEqual(0);
-	});
-
-	xit('gets the long array', () => {
+	it('gets the long array', () => {
 		test = [1, 3, 5, 7, 9, 7, 7, 7, 7, 3, -1, -5, -9, 0, 1, 1, 1, 2, 5, 7];
-		console.log(solution(test));
-		// expect(solution(test).sort()).toEqual(
-		// 	[
-		// 		[0, 1, 2, 3, 4],
-		// 		[0, 1, 2],
-		// 		[1, 2, 3],
-		// 		[2, 3, 4],
-		// 		[0, 1, 2, 3],
-		// 		[1, 2, 3, 4],
-		// 		[5, 6, 7, 8],
-		// 		[6, 7, 8],
-		// 		[5, 6, 7],
-		// 		[8, 9, 10, 11, 12],
-		// 		[8, 9, 10],
-		// 		[9, 10, 11],
-		// 		[10, 11, 12],
-		// 		[8, 9, 10, 11],
-		// 		[9, 10, 11, 12],
-		// 		[14, 15, 16],
-		// 	].sort()
-		// );
+		// console.log('long output', solution(test));
+		expect(solution(test).sort()).toEqual(
+			[
+				[0, 1, 2],
+				[0, 1, 2, 3],
+				[0, 1, 2, 3, 4],
+				[1, 2, 3],
+				[1, 2, 3, 4],
+				[2, 3, 4],
+				[5, 6, 7],
+				[5, 6, 7, 8],
+				[6, 7, 8],
+				[8, 9, 10],
+				[8, 9, 10, 11],
+				[8, 9, 10, 11, 12],
+				[9, 10, 11],
+				[9, 10, 11, 12],
+				[10, 11, 12],
+				[14, 15, 16],
+			].sort()
+		);
 	});
 });

@@ -1,0 +1,12 @@
+{
+  "name": "ocadopracticearrows",
+  "version": "1.0.0",
+  "description": "",
+  "main": "arrows.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
