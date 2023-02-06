@@ -53,5 +53,3 @@ const add = (a, b) => {
 	}
 };
 module.exports = add;
-
-// there is number
